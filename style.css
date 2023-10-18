@@ -1,0 +1,91 @@
+* {
+  font-family: "Arial";
+}
+body {
+    margin: 0;
+    margin-top: 50px;
+}
+
+.header-title {
+  position: absolute;
+  top: 318px;
+  left: 96px;
+  width: 575px;
+  font-family: "Georgia";
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 68px;
+  color:rosybrown;
+}
+
+.header-text {
+  position: absolute; 
+  top: 501px; 
+  left: 89px; 
+  width: 657px; 
+  font-family: "Georgia"; /* Heading */
+  font-size: 22px; 
+  font-weight: 700; 
+  line-height: 34px; 
+  color: burlywood; /* neutral-650 */
+}
+
+/* Header Menu 1 */
+.header-menu {
+  position: absolute; 
+  top: 50px; 
+  left: 547px; 
+  width: 683px; 
+  height: 56px; 
+  display: flex; 
+  align-items: center; /* Body */
+  font-size: 13px; 
+  font-weight: 400; 
+  line-height: 26px; 
+  opacity: 1;
+}
+/* Header Menu 1 - Item */
+.header-menu .header-menu-item {
+  padding: 15px 58.3954356846473px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  color: saddlebrown; /* neutral-600 */
+  border-radius: 4px; /* border-m */
+  cursor: pointer; 
+  white-space: nowrap;
+  font-family: "Georgia"; 
+}
+
+/*haven't implement*/
+/* Header Menu 1 - Selected item */
+/*.header-menu .header-menu-item.selected {
+  position: relative; 
+  font-weight: 700; 
+  color: #F9623EFF; /* tertiary3-500 */
+/*  background: #000000FF; /* transparent */
+/*}*/
+/* Header Menu 1 - Selected item */
+/*.header-menu .header-menu-item.selected:hover:active {*/
+/*  color: #F9623EFF; /* tertiary3-500 */
+/*  background: #000000FF; /* transparent */
+/*}*/
+
+.landing-page-image {
+  position: absolute; 
+  top: 245px; 
+  left: 856px; 
+  width: 498px; 
+  height: 458px; 
+  border-radius: 229px;
+  background-color: yellow;
+}
+
+.map {
+  position: absolute; 
+  top: 1000px; 
+  left: 100px; 
+  width: 498px; 
+  height: 458px; 
+}
+
