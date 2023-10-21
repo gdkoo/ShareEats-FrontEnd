@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home to Homeless Food Donation</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css"> <!--outdated stylesheet -->
 </head>
 <body>
 	<div class="landing-page">
@@ -116,44 +116,6 @@
 
 		<div class="map">
 			<iframe src="https://www.google.com/maps/d/embed?mid=18bTw9DxLVQHYbIUNB3Z3jMCoTY7GX6M&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
-		</div>
-
-		<div class=" section update-inventory">
-			<h1 class="update-inventory-title">Update Inventory</h1>
-			<label for="location-drop-down">Where are you?</label>
-			<select name="location-drop-down" id="location-drop-down">
-				<option value="location1">location1</option>
-				<option value="location2">location2</option>
-				<option value="location3">location3</option>
-				<option value="location4">location4</option>
-				<option value="location5">location5</option>
-				<option value="location6">location6</option>
-				<option value="location7">location7</option>
-				<option value="location8">location8</option>
-			</select>
-
-			<!-- require value, number between 0 to over 50+? -->
-			<!-- input number from 0, to over 50+, in boxes --> 
-			<label for="total-inventory-quantity">How much food do you see?</label>
-			<input type="text" name="total-inventory-quantity" id="total-inventory-quantity">
-
-			<label for="update-food-type">Do you see any perishables?</label>
-			<select name="update-food-type" id="perishable-drop-down">
-				<option value="yes-perishables">I see perishables (best consumed in 1-3 hours)</option>
-				<option value="no-perishables"> No perishables (can last 3+ hours)</option>
-				<!-- if not sure, automatically default to last perishable update-->
-			</select>
-
-			<label for="removed-food">Did you tidy up the inventory?</label>
-			<select name="removed-food" id="removed-food">
-				<option value="yes">Yes</option>
-				<option value="no">No</option>
-			</select>
-
-			<label for="update-inventory-time">Current Time</label>
-			<input type="datetime-local" name="update-inventory-time">
-
-			<button name="submit-update" id="submit-update">Sumbmit update</button>
 		</div>
 	</div>
 	<div class="drop-off-page">
