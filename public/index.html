@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home to Homeless Food Donation</title>
+  <link rel="stylesheet" href="style.css"> <!--outdated stylesheet -->
+
+  <script type="text/javascript">
+    function setMinDate() {
+      var now = new Date();
+      var year = now.getFullYear();
+      var month = now.getMonth() + 1 < 10 ? "0" + (now.getMonth() + 1) : now.getMonth() + 1;
+      var day = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
+            var formattedDate = year + "-" + month + "-" + day + "T00:00";
+      document.getElementById('drop-off-time').setAttribute('min', formattedDate);
+    }
+    function setMaxDate() {
+      var now = new Date();
+      var year = now.getFullYear();
+      var month = now.getMonth() + 1 < 10 ? "0" + (now.getMonth() + 1) : now.getMonth() + 1;
+      var day = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
+            var formattedDate = year + "-" + month + "-" + day + "T23:59";
+      document.getElementById('drop-off-time').setAttribute('max', formattedDate);
+    }
+    function onloadExecute() {
+      setMaxDate();
+      setMinDate();
+    }
+  </script>
+</head>
+<body onload="onloadExecute()">
+  <div class="landing-page">
+    <h1 class="header-title">Food Rescue Exchange Near You</h1>
+    <div class="header-menu">
+      <h1 class="header-menu-item">Home</h1>
+      <h1 class="header-menu-item">Locations</h1>
+      <h1 class="header-menu-item">Drop Off</h1>
+      <h1 class="header-menu-item">Community Partners</h1>
+      <h1 class="header-menu-item">About</h1>
+    </div>
+    <div class="section home-screen">
+      <div class="title-text">
+        <p class="header-text">Give back to your community by donating prepared food</p>
+      </div>
+      <div class="landing-page-image w3-container">
+        <img src="">  
+      </div>
+      <div class="landing-donation-button">
+        <button>Drop off food near you!</button>
+      </div>
+    </div>
+
+    <div class="section how-it-works">
+      <h1 class="food-type-title">Drop off any food</h1>
+      <p>These are approximate categories.</p>
+      <div class="food-type-list">
+        <h3>Perishables</h3>
+          <p>best consumed within 1-3 hours</p>
+          <ul>Cooked Meat</ul>
+          <ul>Cooked Carbohydrates:Rice, Pasta, Stew</ul>
+        <h3>Semi or non-perishables</h3>
+          <p>These are slower to spoil</p>
+          <ul>Fruit</ul>
+          <ul>Vegetables</ul>
+          <ul>Cold cuts</ul>
+          <ul>Beverages</ul>
+          <ul>Sandwiches</ul>
+          <ul>Biscuits, chips, snacks</ul>
+      </div>
+      <h1 class="drop-off-instruction-title">How to drop off</h1>
+      <div class="drop-off-steps">
+        <ul>Choose a location near you</ul>
+        <ul>Input the quantity dropped and the type of food</ul>
+        <ul>Head to the location</ul>
+        <ul>Leave your food at the drop off point</ul>
+      </div>
+    </div>
+  </div>
+  <div class="location-page">
+    <div class="section location-info">
+      <h1>Community Dropoff Points</h1>
+      <div class="location1">
+        <h3 class="location-title">Location 1</h3>
+        <p class="address"> address of location 1</p>
+        <p class="hours-since-perish"> hours since last perishable</p>
+        <p class="hours-since-update"> hours since updated</p>
+      </div>
+
+      <div class="location2">
+        <h3 class="location-title">Location 2</h3>
+        <p class="address"> address of location 2</p>
+        <p class="hours-since-perish"> hours since last perishable</p>
+        <p class="hours-since-update"> hours since updated</p>
+      </div>
+
+      <div class="location3">
+        <h3 class="location-title">Location 3</h3>
+        <p class="address"> address of location 3</p>
+        <p class="hours-since-perish"> hours since last perishable</p>
+        <p class="hours-since-update"> hours since updated</p>
+      </div>
+        
+      <div class="location4">
+        <h3 class="location-title">Location 4</h3>
+        <p class="address"> address of location 4</p>
+        <p class="hours-since-perish"> hours since last perishable</p>
+        <p class="hours-since-update"> hours since updated</p>
+      </div>
+        
+      <div class="location5">
+        <h3 class="location-title">Location 5</h3>
+        <p class="address"> address of location 5</p>
+        <p class="hours-since-perish"> hours since last perishable</p>
+        <p class="hours-since-update"> hours since updated</p>
+      </div>
+        
+      <div class="location6">
+        <h3 class="location-title">Location 6</h3>
+        <p class="address"> address of location 6</p>
+        <p class="hours-since-perish"> hours since last perishable</p>
+        <p class="hours-since-update"> hours since updated</p>
+      </div>
+
+      <div class="location7">
+        <h3 class="location-title">Location 7</h3>
+        <p class="address"> address of location 7</p>
+        <p class="hours-since-perish"> hours since last perishable</p>
+        <p class="hours-since-update"> hours since updated</p>
+      </div>
+      
+      <div class="location8">
+        <h3 class="location-title">Location 8</h3>
+        <p class="address"> address of location 8</p>
+        <p class="hours-since-perish"> hours since last perishable</p>
+        <p class="hours-since-update"> hours since updated</p>
+      </div>
+    </div>
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps/d/embed?mid=18bTw9DxLVQHYbIUNB3Z3jMCoTY7GX6M&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+    </div>
+  </div>
+  <div class="drop-off-page">
+    <h1>Drop Off</h1>
+    <!-- used same name convention as location drop-down in location page
+       is this allowed? -->
+
+
+    <form action="https://eow3s1i6lh8af2u.m.pipedream.net" method="post">
+      <label for="drop-off-time">Drop-off Date & Time</label>
+      <input type="datetime-local" name="drop-off-time" id="drop-off-time">
+      <br>
+
+      <label for="selected-location">Select Drop-Off Point</label>
+      <select name="selected-location" id="selected-location">
+        <option value="location1">location1</option>
+        <option value="location2">location2</option>
+        <option value="location3">location3</option>
+        <option value="location4">location4</option>
+        <option value="location5">location5</option>
+        <option value="location6">location6</option>
+        <option value="location7">location7</option>
+        <option value="location8">location8</option>
+      </select>
+      
+      <!-- add to existing inventory value -->
+      <!-- require value, number between 0 to over 50+? -->
+      <!-- input number from 0, to over 50+, in boxes --> 
+      <label for="no-of-meals">Approx No. of Meals (1-100):</label>
+      <input type="number" min= "1" max="50" name="no-of-meals" id="no-of-meals">
+      <br>
+
+      <label for="food-type">Includes perishables?</label>
+      <select name="food-type" id="food-type">
+        <option value="perishable">Yes, there are perishables (best consumed in 1-3 hours)</option>
+        <option value="nonperishable">No perishables (can last 4+ hours)</option>
+      </select>
+
+      <button>Submit!</button>
+      <br>
+    </form>
+    
+
+    <h4 class="donation-complete-msg">Great :)</h4>
+  </div>
+  <div class="partners-page">
+    <h1>Community Partners</h1>
+  </div>
+  <div class="about-page">
+    <h1>About</h1>
+      <h2>Who we're helping</h2>
+      <br><br>
+        <h3>History</h3>
+          <p>This is where we include data, context, mission.</p>
+      <br><br>
+      <h2>Who we are</h2>
+      <br><br>
+        <h3>Team info</h3>
+  </div>
+</body>
+</html>
