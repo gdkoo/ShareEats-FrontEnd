@@ -1,25 +1,36 @@
 /* General Styles */
-* {
+/** {
     font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
-}
+}*/
 
 body {
     margin-top: 50px;
 }
 
+.landing-page {
+    /* Desktop - 1 */
+    position: relative;
+    width: 849px;
+    height: 555px;
+    background: #FFFFFF;
+}
+
 /* Header Styles */
 .header-title {
+    /* Feed a mouth today. Donate food or deliver donated food to people who need them. */
     position: absolute;
-    top: 318px;
-    left: 96px;
-    width: 575px;
-    font-family: "Georgia";
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 68px;
-    color: rosybrown;
+    width: 382px;
+    height: 122px;
+    left: 409px;
+    top: 155px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #BC4949;
 }
 
 .header-text {

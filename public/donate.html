@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Donate</title>
+	<link rel="stylesheet" href="style.css">
+ 	<script type="text/javascript">
+	    function setMinDate() {
+	      var now = new Date();
+	      var year = now.getFullYear();
+	      var month = now.getMonth() + 1 < 10 ? "0" + (now.getMonth() + 1) : now.getMonth() + 1;
+	      var day = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
+	            var formattedDate = year + "-" + month + "-" + day + "T00:00";
+	      document.getElementById('drop-off-time').setAttribute('min', formattedDate);
+	    }
+	    function setMaxDate() {
+	      var now = new Date();
+	      var year = now.getFullYear();
+	      var month = now.getMonth() + 1 < 10 ? "0" + (now.getMonth() + 1) : now.getMonth() + 1;
+	      var day = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
+	            var formattedDate = year + "-" + month + "-" + day + "T23:59";
+	      document.getElementById('drop-off-time').setAttribute('max', formattedDate);
+	    }
+	    function onloadExecute() {
+	      setMaxDate();
+	      setMinDate();
+	    }
+	  </script>
+</head>
+<body onload="onloadExecute()">
+    <div class="header-menu">
+      <h1 class="header-menu-item"><a href="home.html">Home</a></h1>
+      <h1 class="header-menu-item"><a href="locations.html">Locations</a></h1>
+      <h1 class="header-menu-item">Donate Now</h1>
+      <h1 class="header-menu-item"><a href="about.html">About</a></h1>
+    </div>
+  <div class="drop-off-page">
+    <h1>Drop Off</h1>
+    <!-- used same name convention as location drop-down in location page
+       is this allowed? -->
+
+
+    <form action="https://eow3s1i6lh8af2u.m.pipedream.net" method="post">
+      <label for="drop-off-time">Drop-off Date & Time</label>
+      <input type="datetime-local" name="drop-off-time" id="drop-off-time">
+      <br>
+
+      <label for="selected-location">Select Drop-Off Point</label>
+      <select name="selected-location" id="selected-location">
+        <option value="location1">location1</option>
+        <option value="location2">location2</option>
+        <option value="location3">location3</option>
+        <option value="location4">location4</option>
+        <option value="location5">location5</option>
+        <option value="location6">location6</option>
+        <option value="location7">location7</option>
+        <option value="location8">location8</option>
+      </select>
+      
+      <!-- add to existing inventory value -->
+      <!-- require value, number between 0 to over 50+? -->
+      <!-- input number from 0, to over 50+, in boxes --> 
+      <label for="no-of-meals">Approx No. of Meals (1-100):</label>
+      <input type="number" min= "1" max="50" name="no-of-meals" id="no-of-meals">
+      <br>
+
+      <label for="food-type">Includes perishables?</label>
+      <select name="food-type" id="food-type">
+        <option value="perishable">Yes, there are perishables (best consumed in 1-3 hours)</option>
+        <option value="nonperishable">No perishables (can last 4+ hours)</option>
+      </select>
+
+      <button>Submit!</button>
+      <br>
+    </form>
+    
+
+    <h4 class="donation-complete-msg">Great :)</h4>
+  </div>
+</body>
+</html>
